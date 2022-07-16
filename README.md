@@ -3,24 +3,33 @@
 Repository for ISCI Website [ Indonesia Secret Cyber Inteligence ]
 <hr>
 
-- Website Ini saya buat dengan teknologi 
+<center>
+<img src="assets/img/isci.png" style="width: 200px;">
+</center>
 
-```1. HTML```
+### Features
+```Certification```
 <br>
-```2. CSS```
-<br>
-```3. Javascript```
-<br>
-```4. Bootstrap Framework```
-<br>
-```5. Tailwind CSS```
-<br>
-```6. AOS Library```
-<br>
-```7. SweetAlert2```
-<br>
-```8. PHP```
-<br>
-```9. Google Fonts```
-<br>
-```10. Font Awesome Icon```
+```Hacking Challenge```
+
+
+### Website Ini saya buat dengan teknologi 
+
+- ```1. HTML```
+- ```2. CSS```
+
+- ```3. Javascript```
+
+- ```4. Bootstrap Framework```
+
+- ```5. Tailwind CSS```
+
+- ```6. AOS Library```
+
+- ```7. SweetAlert2```
+
+- ```8. PHP```
+
+- ```9. Google Fonts```
+
+- ```10. Font Awesome Icon```
