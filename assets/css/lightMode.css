@@ -1,0 +1,23 @@
+body.light-mode {
+  background-color: white !important;
+}
+body.light-mode .heading {
+  color: #0c1220;
+}
+body.light-mode .line {
+  background-color: #0c1220;
+}
+body.light-mode #about,
+body.light-mode #contact,
+body.light-mode #footer {
+  background-color: rgb(213, 225, 235);
+}
+body.light-mode .accordion-header {
+  background-color: white;
+}
+body.light-mode .accordion-body {
+  background-color: white;
+}
+body.light-mode .card-body {
+  background-color: white;
+}

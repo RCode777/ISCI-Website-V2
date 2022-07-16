@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=IBM+Plex+Mono:wght@100&family=Koulen&family=Quicksand:wght@300&family=Roboto+Mono:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Chakra Petch", sans-serif !important;
+  overflow-x: hidden;
+  background-color: #0c1220 !important;
+}
+.bg-loader {
+  background-color: #0c1220;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loading .loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/fingerPrint_01.png);
+  background-size: 100px;
+}
+.loading .loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fingerPrint_02.png);
+  background-size: 100px;
+  animation: animate 4s ease-in-out infinite;
+}
+.loading .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: aqua;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 8px #3fefef) drop-shadow(0 0 63px #3fefef);
+  animation: garis 4s ease-in-out infinite;
+}
+.bg-loader h3 {
+  font-family: consolas;
+  color: aqua;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  filter: drop-shadow(0 0 8px #3fefef) drop-shadow(0 0 63px #3fefef);
+  animation: blink 0.4s steps(1) infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes garis {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+}
+@keyframes animate {
+  0%,
+  100% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+/* Navbar */
+nav {
+  width: 100%;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
+}
+.brand {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: aqua;
+}
+.brand:hover {
+  color: rgb(0, 204, 255);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  font-weight: bold;
+  z-index: 1;
+  text-decoration: none;
+  color: aqua;
+  transition: 0.2s;
+  padding: 20px 10px 20px 10px;
+}
+.link {
+  position: relative;
+}
+
+.link a:hover {
+  color: aqua !important;
+}
+
+.link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #128c7e;
+  transition: width 0.3s ease-out;
+}
+.link:hover.link::after {
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  position: relative;
+}
+.burger input {
+  position: absolute;
+  opacity: 0;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 999;
+}
+.burger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: aqua;
+  border-radius: 3px;
+  transition: 0.4s;
+  z-index: 900;
+}
+
+.burger span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.burger span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.burger input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.burger input:checked ~ span:nth-child(3) {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+.burger input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+nav ul.gerak {
+  transform: translateY(0);
+}
+
+#home {
+  position: relative;
+  padding: 80px 0;
+  padding-top: 5%;
+  margin-top: 70px;
+}
+.banner {
+  font-size: 2em !important;
+  color: aqua;
+}
+.animation-img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both !important;
+
+  z-index: 1000;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.heading {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.line {
+  height: 3px;
+  background-color: white;
+  width: 90px;
+}
+.button {
+  background-color: rgb(45 212 191);
+  padding: 17px;
+  border-radius: 5px;
+  color: #0c1220;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: 0px 14px 56px -11px aqua;
+}
+.button:hover {
+  color: white;
+}
+
+/* About Section */
+#about {
+  padding: 80px 0;
+  background-color: #262a35;
+}
+.about-img {
+  margin-top: 60px;
+}
+#faq {
+  padding: 80px 0;
+}
+.accordion {
+  padding: 10px;
+}
+.accordion-button {
+  font-weight: bold;
+  color: rgb(56 189 248 / 1) !important;
+}
+.accordion-header {
+  background-color: #0c1220;
+}
+.accordion-body {
+  background-color: #0c1220;
+  color: aqua;
+}
+
+#features {
+  padding: 80px 0;
+  background-color: #262a35;
+}
+.features h1 {
+  text-transform: uppercase;
+}
+.features-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  border-radius: 30px;
+  font-size: 3em;
+  margin-bottom: 20px;
+  box-shadow: 0px 14px 56px -11px aqua;
+}
+
+/* Team */
+#team {
+  padding: 80px 0;
+  background-color: #0c1220;
+}
+
+/* Contact */
+#contact {
+  padding: 80px 0;
+  background-color: #262a35;
+}
+.card {
+  transition: 0.4s;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #ffff !important;
+}
+.card-body {
+  background-color: #262a35;
+  color: aqua !important;
+}
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 14px 56px -11px aqua;
+}
+
+#join {
+  padding: 80px 0;
+}
+.join-text {
+  margin-bottom: 20px;
+}
+.learning-group {
+  color: white;
+  transition: 0.3s;
+  padding: 20px;
+  border-radius: 10px;
+}
+.learning-group:hover {
+  color: white;
+}
+#footer {
+  padding: 50px 0;
+  background-color: #262a35;
+}
+
+.cl-toggle-switch {
+  position: relative;
+}
+
+.cl-switch {
+  position: relative;
+  display: inline-block;
+}
+
+.cl-switch > input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  z-index: -1;
+  position: absolute;
+  right: 6px;
+  top: -8px;
+  display: block;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 0, 0, 0.38);
+  outline: none;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+.cl-switch > span::before {
+  content: "";
+  float: right;
+  display: inline-block;
+  margin: 5px 0 5px 10px;
+  border-radius: 7px;
+  width: 36px;
+  height: 14px;
+  background-color: rgb(0, 0, 0, 0.38);
+  vertical-align: top;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+.cl-switch > span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cl-switch > input:checked {
+  right: -10px;
+  background-color: #85b8b7;
+}
+
+.cl-switch > input:checked + span::before {
+  background-color: #85b8b7;
+}
+
+.cl-switch > input:checked + span::after {
+  background-color: #018786;
+  transform: translateX(16px);
+}
+/* Hover, Focus */
+.cl-switch:hover > input {
+  opacity: 0.04;
+}
+
+.cl-switch > input:focus {
+  opacity: 0.12;
+}
+
+.cl-switch:hover > input:focus {
+  opacity: 0.16;
+}
+
+.cl-switch > input:active {
+  opacity: 1;
+  transform: scale(0);
+  transition: transform 0s, opacity 0s;
+}
+
+.cl-switch > input:active + span::before {
+  background-color: #8f8f8f;
+}
+
+.cl-switch > input:checked:active + span::before {
+  background-color: #85b8b7;
+}
+
+.cl-switch > input:disabled {
+  opacity: 0;
+}
+
+.cl-switch > input:disabled + span::before {
+  background-color: #ddd;
+}
+
+.cl-switch > input:checked:disabled + span::before {
+  background-color: #bfdbda;
+}
+
+.cl-switch > input:checked:disabled + span::after {
+  background-color: #61b5b4;
+}
+footer {
+  color: aqua !important;
+}

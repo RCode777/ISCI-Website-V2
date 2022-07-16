@@ -1,0 +1,23 @@
+body {
+  background-color: #ccc !important;
+}
+#header {
+  padding: 30px;
+  background-color: rgb(0, 0, 85);
+  color: white;
+}
+.header .ch {
+  margin-top: 13px;
+}
+#header2 {
+  background-color: white;
+  padding: 10px;
+}
+.card {
+  text-align: start;
+  margin-top: 30px !important;
+  border-top: 20px solid rgb(0, 0, 85) !important;
+}
+.total {
+  margin-top: 13px !important;
+}

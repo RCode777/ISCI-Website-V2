@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=IBM+Plex+Mono:wght@100&family=Inconsolata:wght@200;300&family=Koulen&family=Quicksand:wght@300&family=Roboto+Mono:wght@100&display=swap");
+
+body {
+  background-color: #0c1220 !important;
+  font-family: "Inconsolata", monospace !important;
+}
+.form {
+  margin-top: 7%;
+}
+.form h1 {
+  font-size: 4em;
+  color: aqua;
+}
+.line {
+  height: 3px;
+  background-color: white;
+  width: 15em;
+}
+.form input {
+  background-color: #262a35;
+  border-radius: 5px;
+  border: 2px solid aqua;
+  color: aqua !important;
+}
+.form input:focus {
+  background-color: #262a35 !important;
+}
+.submit {
+  transition: 0.4s;
+  border: 1px solid aqua !important;
+  color: aqua;
+  font-weight: bold;
+  padding: 20px 80px 20px 80px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.submit:hover {
+  color: #0c1220;
+  background-color: aqua;
+}
+.button {
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 10px;
+  border: 1px solid aqua;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+.button:hover {
+  background-color: aqua;
+  color: #0c1220;
+}

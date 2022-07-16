@@ -1,0 +1,66 @@
+/* Layar HP */
+@media screen and (max-width: 576px) {
+  body.light-mode nav ul {
+    background-color: rgba(219, 219, 219, 0.9);
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(16, 18, 36, 0.9);
+    z-index: 100;
+    width: 100% !important;
+    transform: translateY(-100%);
+    transition: all 0.7s;
+  }
+
+  .burger {
+    display: flex;
+  }
+  .join-button {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .learning-group {
+    margin: 10px;
+  }
+}
+
+/* Layar Tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(16, 18, 36, 0.9);
+    z-index: 100;
+    width: 100% !important;
+    transform: translateY(-100%);
+    transition: all 0.7s;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* Layar Desktop */
+@media (min-width: 992px) {
+  .join-text {
+    margin-top: 10em;
+  }
+}
