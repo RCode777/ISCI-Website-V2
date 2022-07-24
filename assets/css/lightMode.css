@@ -1,6 +1,16 @@
 body.light-mode {
   background-color: white !important;
 }
+body.light-mode nav ul li a,
+body.light-mode .brand {
+  color: #0c1220;
+}
+body.light-mode nav ul li a:hover {
+  color: #0c1220 !important;
+}
+body.light-mode .link::after {
+  background-color: aqua;
+}
 body.light-mode .heading {
   color: #0c1220;
 }
@@ -9,8 +19,13 @@ body.light-mode .line {
 }
 body.light-mode #about,
 body.light-mode #contact,
-body.light-mode #footer {
-  background-color: rgb(213, 225, 235);
+body.light-mode #footer,
+body.light-mode #features {
+  background-color: rgb(213, 225, 235) !important;
+}
+body.light-mode #team .card-body .card-text,
+body.light-mode #team .card-body .card-title {
+  color: #0c1220 !important;
 }
 body.light-mode .accordion-header {
   background-color: white;
@@ -19,5 +34,9 @@ body.light-mode .accordion-body {
   background-color: white;
 }
 body.light-mode .card-body {
+  background-color: white;
+  border: 1px solid #0c1220;
+}
+body.light-mode #team {
   background-color: white;
 }

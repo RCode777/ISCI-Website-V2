@@ -1,9 +1,9 @@
 <?php 
-session_start();
-if (!isset($_SESSION["level-8"])) {
-    header("Location: level-8");
-    exit;
-}
+// session_start();
+// if (!isset($_SESSION["level-8"])) {
+//     header("Location: level-8");
+//     exit;
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ if (!isset($_SESSION["level-8"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISCI Team | Level 09</title>
-    <link rel="shortcut icon" href="assets/img/isci.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/newisci.png" type="image/x-icon">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/challenge.css">
@@ -77,9 +77,17 @@ if ( isset($_POST["submit"]) ) {
    $password = "3M+|S3TC2rq8'536";
 
    if ( $_POST["username"] == $username && $_POST["password"] == $password ) {
-    $_SESSION["level-9"] = true;
-    header("Location: level-10");
-    exit;
+    // $_SESSION["level-9"] = true;
+    // header("Location: level-10");
+    // exit;
+    echo "<script>
+    Swal.fire({ title: `Mantap!`,
+                text: `Username dan Password kamu benar!`, 
+                icon: `success`,
+                footer: `<a href='level-10' style='color: #0c1220; background-color: aqua;' class='btn btn-primary'>Continue</a>`,
+                 });
+
+</script>";
    } else {
     echo "<script>
             Swal.fire({

@@ -1,5 +1,5 @@
 <?php 
-session_start();
+// session_start();
 // if (!isset($_SESSION["level-12"])) {
 //     header("Location: level-12");
 //     exit;
@@ -13,7 +13,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISCI Team | Level 13</title>
-    <link rel="shortcut icon" href="assets/img/isci.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/newisci.png" type="image/x-icon">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/challenge.css">
