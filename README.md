@@ -1,6 +1,6 @@
 # ISCI-Website-V2
 <hr>
-Repository for ISCI Website [ Indonesia Secret Cyber Inteligence ]
+Repository for ISCI Website [ Indonesia Security Cyber Inteligence ]
 <hr>
 
 <center>
