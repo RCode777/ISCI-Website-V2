@@ -4,7 +4,7 @@ Repository for ISCI Website [ Indonesia Security Cyber Inteligence ]
 <hr>
 
 <center>
-<img src="assets/img/fingerPrint_01.png" style="width: 200px;">
+<img src="assets/img/fingerPrint_02.png" style="width: 200px;">
 </center>
 
 ### Features
